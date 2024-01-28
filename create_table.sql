@@ -1,6 +1,6 @@
 create table producer(
 	id serial not null,
-	name varchar(50) not null,
+	name varchar(100) not null,
 	age int not null,
 	country varchar(50),
 	primary key(id)
@@ -8,8 +8,8 @@ create table producer(
 
 create table song(
 	id serial not null,
-	name varchar(50) not null,
-	lenght varchar(50) not null,
+	name varchar(100) not null,
+	length interval not null,
 	year_of_apparition int not null,
 	producer_id int not null,
 	primary key(id),
@@ -19,7 +19,7 @@ create table song(
 create table genre (
 	id serial not null,
 	song_id int not null,
-	name varchar(50) not null,
+	name varchar(100) not null,
 	culture varchar(50) not null,
 	time_period varchar(50) not null,
 	primary key(id),
@@ -29,7 +29,7 @@ create table genre (
 create table composer (
 	id serial not null,
 	song_id int not null,
-	name varchar(50) not null,
+	name varchar(100) not null,
 	age int not null,
 	sex char not null,
 	primary key(id),
@@ -38,15 +38,15 @@ create table composer (
 
 create table album (
 	id serial not null,
-	name varchar(50) not null,
+	name varchar(100) not null,
 	no_songs int not null,
 	streaming bool not null,
 	primary key(id)
 );
 
-create tabel label (
+create table label (
 	id serial not null,
-	name varchar(50) not null,
+	name varchar(100) not null,
 	adress varchar(50) not null,
 	no_artists int not null,
 	primary key(id)
@@ -54,7 +54,7 @@ create tabel label (
 
 create table artist_band (
 	id serial not null,
-	name varchar(50) not null,
+	name varchar(100) not null,
 	no_members int not null,
 	type bool not null,
 	label_id int not null,
@@ -65,7 +65,7 @@ create table artist_band (
 create table awards (
 	id serial not null,
 	artist_band_id int not null,
-	award bool not null,
+	award boolean not null,
 	name varchar(100),
 	year int not null,
 	primary key(id),
