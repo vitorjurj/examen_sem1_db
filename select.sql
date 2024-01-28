@@ -67,6 +67,7 @@ select * from genre where culture <> 'Western';
 
 -- Select from 'label' table
 select * from label;
+select distinct name from label;
 select adress from label;
 select no_artists as contracts from label;
 select * from label order by no_artists asc;
@@ -93,6 +94,7 @@ select * from producer where name like '% Lee';
 
 -- Select from 'song' table
 select * from song;
+select distinct name from song;
 select * from song order by name desc;
 select name from song where producer_id between 50 and 68;
 select name, year_of_apparition from song;
