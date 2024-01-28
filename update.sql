@@ -87,3 +87,13 @@ update producer set name = 'Liam Johnson', country = 'Australia' where id = 69;
 
 -- update for 'producer' table
 select * from song;
+update song set length = '4:15' where name = 'Shape of You' and year_of_apparition = 2017;
+update song set producer_id = 55 where name = 'Despacito' and year_of_apparition = 2017;
+update song set year_of_apparition = 2020 where name = 'Blinding Lights' and year_of_apparition = 2019;
+update song set name = 'Funky Town' where name = 'Uptown Funk' and year_of_apparition = 2014;
+update song set length = '5:10' where name = 'Hello' and year_of_apparition = 2015;
+update song set producer_id = 57 where name = 'Havana' and year_of_apparition = 2017;
+update song set year_of_apparition = 2019 where name = 'Someone You Loved' and year_of_apparition = 2018;
+update song set length = '2:30' where name = 'Old Town Road' and year_of_apparition = 2019;
+update song set producer_id = 59 where name = 'Sicko Mode' and year_of_apparition = 2018;
+update song set name = 'Monkey Dance' where name = 'Dance Monkey' and year_of_apparition = 2019;
