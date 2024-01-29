@@ -72,29 +72,29 @@ create table awards (
 	foreign key(artist_band_id) references artist_band(id)
 );
 
-create table song_album (
-	id serial not null,
-	song_id int not null,
-	album_id int not null,
-	primary key(id),
-	foreign key(song_id) references song(id),
-	foreign key(album_id) references album(id)
-);
+-- create table song_album (
+--	id serial not null,
+--	song_id int not null,
+--	album_id int not null,
+--	primary key(id),
+--	foreign key(song_id) references song(id),
+--	foreign key(album_id) references album(id)
+--);
 
-create table song_artist_band (
-	id serial not null,
-	song_id int not null,
-	artist_band_id int not null,
-	primary key(id),
-	foreign key(song_id) references song(id),
-	foreign key(artist_band_id) references artist_band(id)
-);
+--create table song_artist_band (
+--	id serial not null,
+--	song_id int not null,
+--	artist_band_id int not null,
+--	primary key(id),
+--	foreign key(song_id) references song(id),
+--	foreign key(artist_band_id) references artist_band(id)
+--);
 
-create table album_artist_band(
-	id serial not null,
-	album_id int not null,
-	artist_band_id int not null,
-	primary key(id),
-	foreign key(album_id) references album(id),
-	foreign key(artist_band_id) references artist_band(id)
-);
+--create table album_artist_band(
+--	id serial not null,
+--	album_id int not null,
+--	artist_band_id int not null,
+--	primary key(id),
+--	foreign key(album_id) references album(id),
+--	foreign key(artist_band_id) references artist_band(id)
+--);
